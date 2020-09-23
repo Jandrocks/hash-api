@@ -1,5 +1,5 @@
-
-def filter (test)
+    
+    def filter (valor)
     ventas = {
     Enero:15000,
     Febrero:22000,
@@ -14,12 +14,12 @@ def filter (test)
     Noviembre:91000,
     Diciembre:21000
 }
-nuevo_ventas = {}
+    hash = {}
     ventas.each do |k,v|
-        nuevo_ventas[k] =  v if v > test 
-    
+        hash = k,v if v < valor
+        print hash 
     end
-    print nuevo_ventas
+
 end
 
 filter (ARGV[0].to_i)

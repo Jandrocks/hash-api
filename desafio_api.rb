@@ -16,6 +16,7 @@ end
 
 data = request('https://jsonplaceholder.typicode.com/photos')[0..10]
 photos=data.map{|x| x['url']}
+puts photos
 html = ""
 photos.each do |photo|
     html +="<img src=\"#{photo}\">\n"

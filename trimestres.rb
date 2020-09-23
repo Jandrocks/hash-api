@@ -13,12 +13,11 @@ ventas = {
     Diciembre:21000
 }
 
-    resultado = ventas.each_slice(3){ |x| p x}.to_a
-
-
+    ventas.each_slice(3){ |x| p x }
     
-    #Q1 = resultado.inject(Q1){|sum| sum += x}
-        print Q1
+    
+    #puts x
+    #puts resultado
 
 
- 
+ #Q1 = resultado.inject(Q1){|sum| sum += x}
