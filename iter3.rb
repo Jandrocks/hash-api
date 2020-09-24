@@ -1,5 +1,4 @@
-    
-    def filter (valor)
+def filter (valor)
     ventas = {
     Enero:15000,
     Febrero:22000,
@@ -15,7 +14,7 @@
     Diciembre:21000
 }
     hash = {}
-    ventas.each do |k,v|
+  ventas.each do |k,v|
         hash = k,v if v < valor
         print hash 
     end

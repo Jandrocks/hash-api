@@ -13,11 +13,11 @@ ventas = {
     Diciembre:21000
 }
 
-    ventas.each_slice(3){ |x| p x }
-    
-    
-    #puts x
-    #puts resultado
+    c = {}
+    ventas.values.each_slice(3).each_with_index do |x,i|
+        c["Q#{i+1}"] = x.sum
+    end
+    print c
 
 
- #Q1 = resultado.inject(Q1){|sum| sum += x}
+    #con ayuda =D

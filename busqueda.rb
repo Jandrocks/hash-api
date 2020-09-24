@@ -1,3 +1,4 @@
+def filter (valor)
 
     ventas = {
         Enero:15000,
@@ -13,16 +14,19 @@
         Noviembre:91000,
         Diciembre:21000
     }
-
-#paso = .to_i
-ventas.each do |k,v|
-    puts k,v if v = ARGV.to_i
-
+   
+    encontrado = false
+    ventas.each do |k,v|
+        if v == valor  
+           h = k,v           
+           encontrado = true
+           puts h
+        end
+     end 
+     if encontrado == false
+        puts "no encontrado"
+     end
 end
-
-
-#    match = ventas.invert[entrada]
-#    puts match ? match : "no-no"
-
-
-
+ARGV.each do |entrada|
+    filter entrada.to_i
+end

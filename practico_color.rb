@@ -36,16 +36,16 @@ colors = {
 }
 
 #para buscar un color
-#entrada = ARGV[0]
-#match = colors.invert[entrada]
-#print match ? match: "no-no"
+entrada = ARGV[0]
+match = colors.invert[entrada]
+print match ? match: "no-no"
 
 #para buscar muchos colores iterando con ARGV
 
-ARGV.each do |entrada|
-    match = colors.invert[entrada]
-    puts match ? match : "no-no"
-end
+#ARGV.each do |entrada|
+ #   match = colors.invert[entrada]
+  #  puts match ? match : "no-no"
+#end
 
 #unir dos hash a.marge(b)
 
@@ -57,8 +57,8 @@ end
 
 #a = [1, 2, 3, 4, 5, 6, 7, 8] .group_by{ |x| x.even? }
 
-#[1, 2, 3, 4, 5, 6, 7, 8] .group_by{ |x| x > 4}
-#["hola", "a", "todos"].group_by { |x| x.length } # Agrupar por el largo
+#r = [1, 2, 3, 4, 5, 6, 7, 8] .group_by{ |x| x > 4}
+#["hola", "a", "todos"].group_by { |x| x.length } #  por el largo
 #[1, 2, 3, 4, 1, 2, 1, 5, 8].group_by { |x| x } # Agrupar por el mismo elemento
 #['a', 'ab', 'abc', 'b', 'bc', 'bcd'].group_by { |x| x[0] } # Por la primera letra
 #['a', 1, 'b', 2, 'c'].group_by { |x| x.class } # Por tipo
